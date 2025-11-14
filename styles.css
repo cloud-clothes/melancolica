@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(215, 211, 169);
+  background-color: rgb(215, 211, 169); /* Fondo similar al de la imagen */
   color: rgb(155, 114, 0);
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
@@ -20,29 +20,21 @@ body {
 
 
 .profile-name {
-  .windsong-regular {
-  font-family: "WindSong", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.windsong-medium {
-  font-family: "WindSong", cursive;
-  font-weight: 500;
-  font-style: normal;
-}
-
+  /* Las clases windsong-regular y windsong-medium no son válidas aquí */
+  /* Estas deben ir en el <link> en el HTML si usas esa fuente */
+  
   text-align: center;
   color: rgb(200, 110, 0);
   padding: 30px;
-  font-size: 28px;
+  font-size: 37px; /* Usamos el tamaño del <style> del HTML */
+  font-family: 'Dancing Script', cursive; /* Usamos la fuente del <style> del HTML */
 }
 
 .links {
   text-align: center;
   margin-top: 10px;
-  border: 100px solid rgb(200, 110, 0);
-  border-width: 2px;
+  /* Modificamos el borde para que sea más sutil como en la imagen */
+  border: 2px solid rgb(200, 110, 0); 
   padding: 10px;
 
   width: 290px;
@@ -50,51 +42,54 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  border-radius: 40px;
-
+  border-radius: 40px; /* Borde redondeado para el botón */
+  background-color: rgb(224, 216, 178); /* Color de fondo claro para el botón */
   font-size: 18px;
 }
 
-/* --- Nuevo estilo para NAVIDAD como primera opción --- */
+/* --- Estilo para el botón principal (NAVIDAD) --- */
 .links-navidad {
-  background-color: rgb(240, 240, 200); /* Fondo más claro para resaltar */
-  color: rgb(179, 30, 0); /* Texto rojo navideño */
-  border: 4px solid rgb(179, 30, 0); /* Borde rojo */
-  
   text-align: center;
   margin-top: 10px;
+  /* Mantiene la misma forma para verse uniforme */
+  border: 4px solid rgb(179, 30, 0); /* Borde rojo más grueso para destacar */
   padding: 10px;
+
   width: 290px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   border-radius: 40px;
-  font-size: 18px;
-  letter-spacing: 3px; /* Espaciado extra */
+  
+  /* Estilos visuales de Navidad */
+  background-color: rgb(240, 240, 200); /* Fondo claro festivo */
+  color: rgb(179, 30, 0); /* Texto rojo navideño */
   font-weight: bold;
+  font-size: 18px;
 }
+
+/* --- Efectos Hover --- */
 
 .links-navidad:hover {
   background-color: rgb(179, 30, 0);
   color: rgb(255, 255, 255); /* Texto blanco al pasar el ratón */
   border: 4px solid rgb(240, 240, 200);
 }
-/* --- Fin nuevo estilo --- */
 
 a {
   text-decoration: none;
-
-  color: rgb(200, 110, 0);
-  transition: color 1s;
+  color: inherit; /* Hereda el color del elemento .links o .links-navidad */
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
-a:hover {
+.links:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(197, 196, 149);
   border: 4px solid rgb(200, 110, 0);
 }
+
 .footer{
   margin-top: 5% !important;
   margin-bottom: 10px;
 }
-
