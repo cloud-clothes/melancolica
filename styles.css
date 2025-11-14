@@ -1,78 +1,108 @@
-<html lang="en">
+¡Claro! Voy a añadir la opción de NAVIDAD como la primera opción a tu menú, usando un estilo especial para que destaque más, como hicimos en la respuesta anterior.
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Ropa melancolica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-  <style>
-    .profile-name {
-      font-family: 'Dancing Script', cursive;
-      font-size: 37px; /* Ajusta el tamaño si es necesario */
-       color: rgb(200, 110, 0); /* Color opcional */
-    }
-  </style>
-</head>
+Aquí está tu código CSS actualizado (styles.css):
 
-<body>
-    <div class="container">
-                <img class="profile-picture"
-            src="img/melancolica.jpg" />
+🎄 Código CSS Actualizado (styles.css)
+He añadido la clase .links-navidad al final para darle a la opción de Navidad un fondo más claro, texto rojo y un borde rojo, haciéndola más visible que los otros enlaces.
 
-                <div class="profile-name">Ropa Melancolica</div>
-        
-                <a href="https://drive.google.com/drive/folders/1fVyCffc1jEB8Sqoh2_a_OKi4hhAhh0GA?usp=drive_link" class="links-navidad">
-            <i class="fas fa-gift"></i>
-            NAVIDAD
-        </a>
-                <a href="https://drive.google.com/drive/folders/19aW9O91Go9kQHPgDCMCEEMIlXoFM5ZGn" class="links">
-            <i class="fas fa-tshirt" style="color: #c86e00;"></i>
-            Catalogo A
-        </a>
+CSS
 
-        <a href="https://drive.google.com/drive/folders/1fbyCfjmg-MtZT1QHN47Y5JNnASP76u7A" class="links">
-            <i class="fas fa-tshirt" style="color: #c86e00;"></i>
-            Catalogo B
-        </a>
-        
-        <a href="https://drive.google.com/drive/folders/1TXqlFyBPgeVHfkrR923MrY1mvSTdP2RU" class="links">
-            <i class="fas fa-thumbs-up" style="color: #c86e00;"></i>
-            Recomendaciones
-        </a>
-       
-        <a href="https://drive.google.com/drive/u/1/mobile/folders/1-HFcpFSnNFRVkCE5wFyak5IAdnRcCpci?hl=es&pli=1&sort=13&direction=a" class="links">
-            <i class="fas fa-store" style="color: #c86e00;"></i>
-            Blusas, pantalones, vestidos... etc.
-        </a>
+body {
+  background-color: rgb(215, 211, 169);
+  color: rgb(155, 114, 0);
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+}
 
-        <a href="https://wa.me/2482494999" class="links">
-            <i class="fab fa-whatsapp">&nbsp;</i>
-            WhatsApp
-        </a>
+.profile-picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-        <a href="https://www.facebook.com/profile.php?id=100027231927284" class="links">
-            <i class="fab fa-facebook">&nbsp;</i>
-            Facebook
-        </a>
+  margin-top: 3%;
+  height: auto;
+  max-width: 200px;
 
-        <a href="https://www.instagram.com/ropa.melancolica/" class="links">
-            <i class="fab fa-instagram">&nbsp;</i>
-            Instagram
-        </a>
+  border-radius: 50%;
+}
 
-            <div class="footer mt-5">
-        <hr/>
-        <h6>Enviamos desde <span class="love">♥</span> Texmelucan estado de Puebla Mexico</h6>
-        <h6>
-        Envios economicos desde $70.00:
-        
-        </h6>
-    </div>
-</div>
-</body>
 
-</html>
+
+.profile-name {
+  .windsong-regular {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.windsong-medium {
+  font-family: "WindSong", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+  text-align: center;
+  color: rgb(200, 110, 0);
+  padding: 30px;
+  font-size: 28px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 10px;
+  border: 100px solid rgb(200, 110, 0);
+  border-width: 2px;
+  padding: 10px;
+
+  width: 290px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 40px;
+
+  font-size: 18px;
+}
+
+/* --- Nuevo estilo para NAVIDAD como primera opción --- */
+.links-navidad {
+  background-color: rgb(240, 240, 200); /* Fondo más claro para resaltar */
+  color: rgb(179, 30, 0); /* Texto rojo navideño */
+  border: 4px solid rgb(179, 30, 0); /* Borde rojo */
+  
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  width: 290px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  font-size: 18px;
+  letter-spacing: 3px; /* Espaciado extra */
+  font-weight: bold;
+}
+
+.links-navidad:hover {
+  background-color: rgb(179, 30, 0);
+  color: rgb(255, 255, 255); /* Texto blanco al pasar el ratón */
+  border: 4px solid rgb(240, 240, 200);
+}
+/* --- Fin nuevo estilo --- */
+
+a {
+  text-decoration: none;
+
+  color: rgb(200, 110, 0);
+  transition: color 1s;
+}
+
+a:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(197, 196, 149);
+  border: 4px solid rgb(200, 110, 0);
+}
+.footer{
+  margin-top: 5% !important;
+  margin-bottom: 10px;
+}
