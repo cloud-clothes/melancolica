@@ -17,32 +17,27 @@ body {
   border-radius: 50%;
 }
 
-
-
 .profile-name {
-  /* Las clases windsong-regular y windsong-medium no son válidas aquí */
-  /* Estas deben ir en el <link> en el HTML si usas esa fuente */
-  
-  text-align: center;
-  color: rgb(200, 110, 0);
-  padding: 30px;
-  font-size: 37px; /* Usamos el tamaño del <style> del HTML */
-  font-family: 'Dancing Script', cursive; /* Usamos la fuente del <style> del HTML */
+    /* *** SINTAXIS CORREGIDA AQUÍ: Se eliminaron las llaves extrañas y las clases de fuente no usadas *** */
+    text-align: center;
+    color: rgb(200, 110, 0);
+    padding: 30px;
+    font-size: 28px;
 }
 
 .links {
   text-align: center;
   margin-top: 10px;
-  /* Modificamos el borde para que sea más sutil como en la imagen */
+  /* Corregido para que se vea como en tu imagen */
   border: 2px solid rgb(200, 110, 0); 
   padding: 10px;
 
   width: 290px;
-  display: block;
+  display: block; /* ESTO ES LO QUE HACE QUE SE VEAN UNO DEBAJO DEL OTRO */
   margin-left: auto;
   margin-right: auto;
 
-  border-radius: 40px; /* Borde redondeado para el botón */
+  border-radius: 40px;
   background-color: rgb(224, 216, 178); /* Color de fondo claro para el botón */
   font-size: 18px;
 }
@@ -51,12 +46,11 @@ body {
 .links-navidad {
   text-align: center;
   margin-top: 10px;
-  /* Mantiene la misma forma para verse uniforme */
   border: 4px solid rgb(179, 30, 0); /* Borde rojo más grueso para destacar */
   padding: 10px;
 
   width: 290px;
-  display: block;
+  display: block; /* Para que se separe de los demás */
   margin-left: auto;
   margin-right: auto;
 
@@ -69,13 +63,12 @@ body {
   font-size: 18px;
 }
 
-/* --- Efectos Hover --- */
-
 .links-navidad:hover {
   background-color: rgb(179, 30, 0);
   color: rgb(255, 255, 255); /* Texto blanco al pasar el ratón */
   border: 4px solid rgb(240, 240, 200);
 }
+/* --- Fin nuevo estilo --- */
 
 a {
   text-decoration: none;
@@ -88,7 +81,6 @@ a {
   background-color: rgb(197, 196, 149);
   border: 4px solid rgb(200, 110, 0);
 }
-
 .footer{
   margin-top: 5% !important;
   margin-bottom: 10px;
