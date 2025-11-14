@@ -1,12 +1,3 @@
-¡Claro! Voy a añadir la opción de NAVIDAD como la primera opción a tu menú, usando un estilo especial para que destaque más, como hicimos en la respuesta anterior.
-
-Aquí está tu código CSS actualizado (styles.css):
-
-🎄 Código CSS Actualizado (styles.css)
-He añadido la clase .links-navidad al final para darle a la opción de Navidad un fondo más claro, texto rojo y un borde rojo, haciéndola más visible que los otros enlaces.
-
-CSS
-
 body {
   background-color: rgb(215, 211, 169);
   color: rgb(155, 114, 0);
@@ -106,3 +97,4 @@ a:hover {
   margin-top: 5% !important;
   margin-bottom: 10px;
 }
+
