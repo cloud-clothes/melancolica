@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(215, 211, 169); /* Fondo similar al de la imagen */
+  background-color: rgb(215, 211, 169); /* Fondo beige de la imagen */
   color: rgb(155, 114, 0);
   font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
@@ -18,39 +18,41 @@ body {
 }
 
 .profile-name {
-    /* *** SINTAXIS CORREGIDA AQUÍ: Se eliminaron las llaves extrañas y las clases de fuente no usadas *** */
-    text-align: center;
-    color: rgb(200, 110, 0);
-    padding: 30px;
-    font-size: 28px;
+  /* SINTAXIS CORREGIDA */
+  text-align: center;
+  color: rgb(200, 110, 0);
+  padding: 30px;
+  font-size: 28px;
 }
 
+/* Estilo para los botones estándar (como en la imagen) */
 .links {
   text-align: center;
   margin-top: 10px;
-  /* Corregido para que se vea como en tu imagen */
+  /* Borde y fondo que coinciden con la imagen */
   border: 2px solid rgb(200, 110, 0); 
-  padding: 10px;
+  padding: 15px 10px; 
 
   width: 290px;
-  display: block; /* ESTO ES LO QUE HACE QUE SE VEAN UNO DEBAJO DEL OTRO */
+  display: block; /* CLAVE para que se apilen verticalmente */
   margin-left: auto;
   margin-right: auto;
 
   border-radius: 40px;
-  background-color: rgb(224, 216, 178); /* Color de fondo claro para el botón */
+  background-color: rgb(235, 227, 192); /* Fondo de los botones */
   font-size: 18px;
+  color: rgb(200, 110, 0); /* Color de texto e iconos */
 }
 
-/* --- Estilo para el botón principal (NAVIDAD) --- */
+/* Estilo para el botón principal (NAVIDAD) */
 .links-navidad {
   text-align: center;
   margin-top: 10px;
-  border: 4px solid rgb(179, 30, 0); /* Borde rojo más grueso para destacar */
-  padding: 10px;
+  border: 4px solid rgb(179, 30, 0); /* Borde rojo festivo */
+  padding: 15px 10px;
 
   width: 290px;
-  display: block; /* Para que se separe de los demás */
+  display: block;
   margin-left: auto;
   margin-right: auto;
 
@@ -63,16 +65,17 @@ body {
   font-size: 18px;
 }
 
+/* --- Efectos Hover --- */
+
 .links-navidad:hover {
   background-color: rgb(179, 30, 0);
   color: rgb(255, 255, 255); /* Texto blanco al pasar el ratón */
   border: 4px solid rgb(240, 240, 200);
 }
-/* --- Fin nuevo estilo --- */
 
 a {
   text-decoration: none;
-  color: inherit; /* Hereda el color del elemento .links o .links-navidad */
+  color: inherit; /* Mantiene el color del texto definido en .links o .links-navidad */
   transition: background-color 0.3s, border-color 0.3s;
 }
 
@@ -85,3 +88,4 @@ a {
   margin-top: 5% !important;
   margin-bottom: 10px;
 }
+```<ctrl63>
